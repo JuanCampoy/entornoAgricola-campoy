@@ -41,3 +41,11 @@ main aside {
         color: #ffffff;
        
     }
+
+    main h3{
+        text-align: center;
+    }
+
+main img{
+    text-align: center;
+}
