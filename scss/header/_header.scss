@@ -1,8 +1,8 @@
 header{ background-color: white;}
 
 .navbar{
-    background: rgb(80,80,80);
-    background: linear-gradient(175deg, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 100%);
+    background: $color-primNabvar;
+    background: linear-gradient(175deg, $color-primNabvar 0%, $color-secNabvar 100%);
     padding: 0;
   }
   
