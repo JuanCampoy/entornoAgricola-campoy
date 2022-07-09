@@ -62,4 +62,10 @@ footer a:hover {
   -moz-box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
 }
 
+.carousel-centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
