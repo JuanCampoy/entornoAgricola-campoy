@@ -19,6 +19,13 @@ ul li a:hover {
   border-radius: 15%;
 }
 
+form > div {
+  margin-top: 10px;
+}
+form > div :last-child {
+  margin-bottom: 10px;
+}
+
 footer {
   background: rgb(0, 73, 83);
   background: linear-gradient(331deg, rgb(1, 47, 53) 0%, rgb(20, 58, 47) 100%);
