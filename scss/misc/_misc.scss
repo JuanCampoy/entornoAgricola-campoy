@@ -5,3 +5,22 @@
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
+
+//------  CARRUSELL  -------
+
+//--- controles colores ---
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+//------ Sombra   ----
+
+.carousel {
+    
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,1);
+
+}
+

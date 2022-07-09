@@ -14,15 +14,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- css -->
    <link rel="stylesheet" href="./css/style.css">
 
 <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
 
 </head>
 
@@ -78,7 +81,51 @@
 	<div class="row flex-row-reverse">
 
 		<aside class="col-lg-3 my-3  ">
-			ASIDE
+			carussel
+			<!-- Carussell vertical en pantallas grandes -->
+			<div id="carouselExampleFade" class="carousel vert slide carousel-fade d-none d-lg-block" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="./assets/img/aside/cerdo publi.png" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="./assets/img/aside/pollo publi.png" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="./assets/img/aside/vaca publi.png" class="d-block w-100" alt="...">
+				  </div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<div id="carouselExampleControls" class="carousel slide .d-lg-none .d-xl-block" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="./assets/img/aside/ahome-horizontal.png" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="./assets/img/aside/ajonjoli-horizontal.png" class="d-block w-100" alt="...">
+				  </div>
+				 
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+
 		</aside>
 
 		<div class="col-12 col-lg-9 my-3">
@@ -134,7 +181,7 @@
 	
 </footer>
 
-<script src="./js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

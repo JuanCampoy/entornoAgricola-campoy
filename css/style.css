@@ -19,16 +19,6 @@ ul li a:hover {
   border-radius: 15%;
 }
 
-main aside {
-  background-color: coral;
-}
-main aside h3 {
-  text-align: center;
-}
-main aside img {
-  text-align: center;
-}
-
 footer {
   background: rgb(0, 73, 83);
   background: linear-gradient(331deg, rgb(1, 47, 53) 0%, rgb(20, 58, 47) 100%);
@@ -52,6 +42,17 @@ footer a:hover {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.carousel {
+  box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
