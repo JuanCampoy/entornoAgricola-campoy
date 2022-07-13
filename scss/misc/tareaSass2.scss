@@ -1,0 +1,72 @@
+//map-get
+$color-red:0;
+
+$redes:(
+    twitter:#1DA1F2,
+    facebook:#4267B2,
+    instagram:#E1306C,
+    youtube:#FF0000
+);
+
+
+@each $red-social,$color in $redes {
+    .btn-footer-#{$red-social}{
+        $color-red: $color;
+    }
+    
+    
+}
+
+//extend 
+
+%tarjeta{
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.tarjeta-redes{
+    @extend %tarjeta;
+
+    width: 300px;
+    background-color: $color-primNabvar;
+}
+
+.tarjeta-inactiva{
+    @extend %tarjeta;
+
+    background-color: $color-secNabvar;
+}
+
+//mixin
+@mixin d-flex ($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+
+    padding:  0px 20vw;
+
+    @include d-flex(space-around,center )
+}
+
+@mixin cuadrado ($size,$radius:0){
+
+    width: $size;
+    height: $size;
+
+    @if $radius !=0{
+        border-radius: $radius;
+    
+    }
+}
+
+.avatar{
+    @include cuadrado(100px,10px )
+}
