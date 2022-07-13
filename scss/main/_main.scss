@@ -41,11 +41,6 @@ p{
 
 //mixin para tarjetas paginas servicios
 
-
-
-
-
-
 @mixin tarjeta-chida ($width,$heigt,$border:""){
 
     width: $width;
@@ -85,4 +80,3 @@ p{
     }   
 }
 
-   
