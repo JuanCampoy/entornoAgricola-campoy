@@ -1,22 +1,36 @@
+
+
+$redes:(
+    twitter:#1DA1F2,
+    facebook:#4267B2,
+    instagram:#E1306C,
+    youtube:#FF0000
+        );
+
+
+@each $red-social,$color in $redes {
+    .btn-fthov-#{$red-social}{
+    color: white;  
+    margin: 0 3rem;
+    display: inline-block;
+    &:hover{
+        transform: scale(1.3);
+        color: $color;
+    }
+    
+}
+}
+
+
 footer{
 
     background: rgb(0,73,83);
     background: linear-gradient(331deg, rgb(1, 47, 53) 0%, rgb(20, 58, 47) 100%);
-    
 
     p{
         color: white;
         font-weight: bold;
     }
-    a{
-
-        color: #ffffff;
-        margin: 0 3rem;
-        display: inline-block;
-        &:hover{
-            transform: scale(1.3);
-            color: #ffffff;
-           
-        }
-    }
+    
+    
 }
