@@ -1,20 +1,18 @@
 header{ 
     background-color: white;
-
-    
 }
 
 .navbar{
     background: $color-primNabvar;
     background: linear-gradient(175deg, $color-primNabvar 0%, $color-secNabvar 100%);
     padding: 0;
-  }
-  
-  
-  
-  ul li a:hover{
-      background-color: rgb(26, 77, 62);
-      border: solid rgb(11, 36, 1) 2px;
-      border-radius: 15%;
-  }
+}
+
+
+
+ul li a:hover{
+    background-color: rgb(26, 77, 62);
+    border: solid rgb(11, 36, 1) 2px;
+    border-radius: 15%;
+}
 
