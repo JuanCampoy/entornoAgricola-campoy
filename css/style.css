@@ -194,4 +194,51 @@ footer {
   margin-top: 10px;
 }
 
+.tarjeta-servicio {
+  margin: 10px 10px 0;
+  border: 2px black solid;
+  height: auto;
+  width: 48%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "titulo titulo icono-servicio" "contenido contenido icono-servicio" "contenido contenido boton ";
+}
+.tarjeta-servicio h3 {
+  grid-area: titulo;
+  display: block;
+  justify-content: end;
+}
+.tarjeta-servicio p {
+  grid-area: contenido;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tarjeta-servicio img {
+  width: 100px;
+  grid-area: icono-servicio;
+  display: block;
+  margin: auto;
+}
+.tarjeta-servicio button {
+  grid-area: boton;
+  height: 50px;
+}
+
+main > section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  h3 {
+    color: red;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
