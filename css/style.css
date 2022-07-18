@@ -19,70 +19,6 @@ ul li a:hover {
   border-radius: 15%;
 }
 
-form > div {
-  margin-top: 10px;
-}
-form > div :last-child {
-  margin-bottom: 10px;
-}
-
-.tarjeta, .tarjeta-nosotros {
-  height: 100%;
-  width: 200px;
-}
-
-.tarjeta-nosotros {
-  border: black 2px solid;
-  background-color: rgba(27, 209, 24, 0.4509803922);
-  background-image: linear-gradient(45deg, #1bd118 0%, #1f8bcd 100%);
-}
-.tarjeta-nosotros h3 {
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 25px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  font-weight: 700;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: capitalize;
-}
-.tarjeta-nosotros p {
-  color: black;
-  font-weight: 700;
-  text-decoration: solid;
-}
-
-.tarjeta-servicio {
-  width: 320px;
-  height: 230px;
-  border: black 2px solid;
-  background-color: #FFDEE9;
-  background-image: linear-gradient(0deg, #FFDEE9 0%, #9cb4b3 100%);
-}
-.tarjeta-servicio h4 {
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 25px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  font-weight: 700;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: capitalize;
-}
-.tarjeta-servicio p {
-  color: black;
-  font-weight: 700;
-  text-decoration: solid;
-}
-
 .btn-fthov-twitter {
   color: white;
   margin: 0 3rem;
@@ -145,16 +81,16 @@ footer p {
 }
 
 .carousel {
-  width: 10px;
-  height: 50px;
-  box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
-  -webkit-box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
-  -moz-box-shadow: 0px 0px 9px 1px rgb(0, 0, 0);
-  display: none;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .tarjeta-servicio {
-  margin: 10px 10px 0;
+  width: 320px;
+  height: 230px;
+  border: black 2px solid;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #9cb4b3 100%);
+  margin: 20px 10px 0;
   border: 2px black solid;
   height: auto;
   width: 40%;
@@ -165,14 +101,26 @@ footer p {
 }
 .tarjeta-servicio h3 {
   grid-area: titulo;
-  display: block;
-  justify-content: end;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
 }
 .tarjeta-servicio p {
   grid-area: contenido;
   margin: 20px;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-weight: 700;
+  text-decoration: solid;
 }
 .tarjeta-servicio img {
   width: 100px;
@@ -183,6 +131,12 @@ footer p {
 .tarjeta-servicio button {
   grid-area: boton;
   height: 50px;
+  margin-bottom: 5px;
+}
+.tarjeta-servicio:hover {
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-7px);
+  transition-duration: 250ms;
 }
 
 main > section {
@@ -195,42 +149,6 @@ footer {
   margin-top: 10px;
 }
 
-@media (max-width: 767px) {
-  .tarjeta-servicio {
-    margin: 10px 10px 0;
-    border: 2px black solid;
-    height: auto;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "titulo titulo icono-servicio" "contenido contenido icono-servicio" "contenido contenido boton ";
-  }
-  .tarjeta-servicio h3 {
-    grid-area: titulo;
-    display: block;
-    justify-content: end;
-  }
-  .tarjeta-servicio p {
-    grid-area: contenido;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjeta-servicio img {
-    width: 100px;
-    grid-area: icono-servicio;
-    display: block;
-    margin: auto;
-  }
-  .tarjeta-servicio button {
-    grid-area: boton;
-    height: 50px;
-  }
-  main > section {
-    justify-content: center;
-  }
-}
 @media (max-width: 767px) {
   .tarjeta-servicio {
     margin: 10px 10px 0;
@@ -266,6 +184,94 @@ footer {
   }
   main > section {
     justify-content: center;
+  }
+}
+.tarjeta-nosotros {
+  width: 320px;
+  height: 230px;
+  border: black 2px solid;
+  background-color: rgba(27, 209, 24, 0.6352941176);
+  background-image: linear-gradient(45deg, rgba(27, 209, 24, 0.6980392157) 0%, rgba(31, 138, 205, 0.6039215686) 100%);
+  margin: 20px 10px 0;
+  border: 2px black solid;
+  height: auto;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "titulo  " "icono " "contenido" "boton";
+}
+.tarjeta-nosotros h3 {
+  grid-area: titulo;
+  margin: auto;
+  color: rgb(0, 0, 0);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+.tarjeta-nosotros p {
+  grid-area: contenido;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 700;
+  text-decoration: solid;
+}
+.tarjeta-nosotros img {
+  width: 100px;
+  grid-area: icono;
+  display: block;
+  margin: auto;
+}
+.tarjeta-nosotros button {
+  grid-area: boton;
+  height: 50px;
+}
+.tarjeta-nosotros:hover {
+  box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-7px);
+  transition-duration: 250ms;
+}
+
+@media (max-width: 992px) {
+  .tarjeta-nosotros {
+    margin: 10px 10px 0;
+    border: 2px black solid;
+    height: auto;
+    width: 47%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "titulo " "icono-servicio" "contenido" "boton";
+  }
+  .tarjeta-nosotros h3 {
+    grid-area: titulo;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  .tarjeta-nosotros p {
+    grid-area: contenido;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta-nosotros img {
+    width: 100px;
+    grid-area: icono-servicio;
+    display: block;
+    margin: auto;
+  }
+  .tarjeta-nosotros button {
+    grid-area: boton;
+    height: 50px;
   }
 }
 

@@ -1,7 +1,25 @@
+//mixin para tarjetas paginas servicios
+
+@mixin tarjeta ($width,$heigt,$border:""){
+
+    width: $width;
+    height: $heigt;
+    
+    @if $border !=""{
+        border: $border;
+    
+    }
+}
 
 .tarjeta-servicio {
     
-    margin: 10px 10px 0;
+    @include tarjeta(320px,230px,black 2px solid );
+    
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #9cb4b3 100%);
+
+
+    margin: 20px 10px 0;
     border: 2px black   solid;
     height:auto;
     width: 40%;
@@ -18,14 +36,28 @@
 
     h3{
         grid-area: titulo;
-        display: block;
-        justify-content: end;
+        margin: auto;
+
+        color: rgb(0, 0, 0);
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 24px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: capitalize;
     }
     p{
         grid-area: contenido;
         margin: 20px;
         justify-content: center;
         align-items: center;
+
+    color: black;
+    font-weight: 700;
+    text-decoration: solid
     }
     img{
         
@@ -38,10 +70,17 @@
     button{
         grid-area: boton;
         height: 50px;
+        margin-bottom: 5px;
+       
+
     }
+
+    &:hover {
+        box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
+        transform: translateY(-7px);
+        transition-duration: 250ms;
+      }
 }
-
-
 
 main > section  {
     display: flex;
@@ -53,58 +92,6 @@ main > section  {
 
 footer{
     margin-top: 10px;
-}
-
-
-@media (max-width: 767px) {
-
-    .tarjeta-servicio {
-    
-        margin: 10px 10px 0;
-        border: 2px black   solid;
-        height:auto;
-        width: 90%;
-     
-    
-        display: grid;
-        
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows:    auto auto auto  ;
-    
-        grid-template-areas:    "titulo titulo icono-servicio"
-                                "contenido contenido icono-servicio"
-                                "contenido contenido boton ";
-    
-        h3{
-            grid-area: titulo;
-            display: block;
-            justify-content: end;
-        }
-        p{
-            grid-area: contenido;
-            margin: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
-            
-            width: 100px;
-            grid-area: icono-servicio;
-            display: block;
-            margin: auto;
-            
-        }
-        button{
-            grid-area: boton;
-            height: 50px;
-        }
-    }
-    
-    main > section  {
-        justify-content: center;
-        
-        
-    }
 }
 
 @media (max-width: 767px) {
@@ -160,4 +147,4 @@ footer{
     }
 }
 
-
+  
