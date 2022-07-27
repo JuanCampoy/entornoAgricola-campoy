@@ -1,0 +1,26 @@
+.bg_img{
+    
+  background-repeat: no-repeat;
+  background-size: auto
+}
+
+.centrador{
+   text-align: center;
+}
+
+.paddingUs{
+    padding :5% 5%;
+    &:first-child{
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .formUs{
+        padding: 0 20%;
+    }
+}
+
+style{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
