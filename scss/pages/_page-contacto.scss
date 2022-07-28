@@ -1,31 +1,16 @@
-.bg_img{
-    
-  background-repeat: no-repeat;
-  background-size: auto
-}
-
-.centrador{
-   text-align: center;
-}
-
-.paddingUs{
-    padding :5% 5%;
-    &:first-child{
-        padding-top: 5%;
-    }
-}
-
-@media (max-width: 992px) {
-    .formUs{
-        padding: 0 10%;
-    }
-}
-
-
-
 .paginaContacto{
 
-     .info{
+    form{
+         input{
+            background: rgba(50, 50, 50, 0.5)
+        
+                 }
+         textarea{
+            background-color:rgba(50, 50, 50, 0.5);
+         }
+    }
+
+    .info   {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: auto;
@@ -51,11 +36,22 @@
 
         img{
             grid-area: "icono";
-        }
-    }
-   
+            }
+        
+            }
+
+    .bg_img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(../assets/img/page-contacto/background.jpg);
+
+        background-repeat: no-repeat;
+        background-size: auto
+            }
+
+    
+
+    
 }
 
-style{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-}
+
+
+

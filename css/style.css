@@ -274,26 +274,11 @@ footer {
     height: 50px;
   }
 }
-.bg_img {
-  background-repeat: no-repeat;
-  background-size: auto;
+.paginaContacto form input {
+  background: rgba(50, 50, 50, 0.5);
 }
-
-.centrador {
-  text-align: center;
-}
-
-.paddingUs {
-  padding: 5% 5%;
-}
-.paddingUs:first-child {
-  padding-top: 5%;
-}
-
-@media (max-width: 992px) {
-  .formUs {
-    padding: 0 10%;
-  }
+.paginaContacto form textarea {
+  background-color: rgba(50, 50, 50, 0.5);
 }
 .paginaContacto .info {
   display: grid;
@@ -302,6 +287,7 @@ footer {
   grid-template-areas: "icono" "texto";
 }
 .paginaContacto .info p {
+  text-decoration: none;
   display: flex;
   align-items: center;
   grid-area: "texto";
@@ -317,9 +303,10 @@ footer {
 .paginaContacto .info img {
   grid-area: "icono";
 }
-
-style {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.paginaContacto .bg_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/page-contacto/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
