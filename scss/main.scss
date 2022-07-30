@@ -3,6 +3,11 @@
 $color-primNabvar:rgb(80, 80, 80);
 $color-secNabvar:rgba(0,0,0,1);
 
+//Tamaños pantallas
+$pantalla-celular: 576px;
+$pantalla-tablet: 992px;
+$pantalla-laptop: 1200px;
+
 
 @import"reset/reset";
 @import "header/header";

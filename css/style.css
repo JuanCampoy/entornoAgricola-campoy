@@ -274,39 +274,59 @@ footer {
     height: 50px;
   }
 }
-.paginaContacto form input {
-  background: rgba(50, 50, 50, 0.5);
+.paginaContacto .contenedorForm h2 {
+  text-align: center;
 }
-.paginaContacto form textarea {
-  background-color: rgba(50, 50, 50, 0.5);
+.paginaContacto .contenedorForm form label {
+  font-size: 17px;
 }
-.paginaContacto .info {
+.paginaContacto .contenedorForm form input {
+  background-color: rgba(255, 239, 213, 0.55);
+}
+.paginaContacto .contenedorForm form input:focus {
+  transform: scale(1.05);
+}
+.paginaContacto .contenedorForm form textarea {
+  background-color: rgba(255, 239, 213, 0.55);
+}
+.paginaContacto .contenedorForm form textarea:focus {
+  transform: scale(1.05);
+}
+.paginaContacto .contenedorForm form button {
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+.paginaContacto .contenedorInfo {
+  margin-top: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/page-contacto/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.paginaContacto .contenedorInfo .info {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: auto;
   grid-template-areas: "icono" "texto";
 }
-.paginaContacto .info p {
+.paginaContacto .contenedorInfo .info p {
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  text-align: left;
   grid-area: "texto";
   margin-bottom: 0;
   font-family: verdana;
   font-weight: bold;
-  text-align: center;
   font-size: 15px;
   color: rgb(255, 255, 255);
   background-color: rgba(84, 84, 84, 0.05);
   text-shadow: rgb(0, 0, 0) 2px 2px 2px;
 }
-.paginaContacto .info img {
+.paginaContacto .contenedorInfo .info img {
   grid-area: "icono";
-}
-.paginaContacto .bg_img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/page-contacto/background.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
