@@ -104,12 +104,26 @@ footer p {
   margin: auto;
   text-align: center;
   padding-bottom: 15px;
+  color: rgb(0, 0, 0);
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
 }
 .paginaServicios .tarjeta-servicio p {
   grid-area: contenido;
-  margin: 20px;
+  display: flex;
+  margin: 15px 17px;
   justify-content: center;
   align-items: center;
+  color: black;
+  font-weight: 500;
+  text-decoration: solid;
 }
 .paginaServicios .tarjeta-servicio img {
   width: 100px;
@@ -121,7 +135,14 @@ footer p {
   display: block;
   justify-content: center;
   grid-area: boton;
-  margin: 15px 90px;
+  margin: 10px 50px;
+}
+.paginaServicios .tarjeta-servicio .botonCompra:hover {
+  border: 2px rgba(15, 124, 14, 0.6980392157) outset;
+  background-color: rgba(32, 143, 56, 0.8235294118);
+  color: black;
+  font-weight: 500;
+  text-decoration: solid;
 }
 .paginaServicios .tarjeta-servicio:hover {
   box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
@@ -132,6 +153,21 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (min-width: 992px) {
+  .paginaServicios .tarjeta-servicio {
+    width: 400px;
+    height: 200px;
+    border: black 2px solid;
+    width: 50;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo  icono-servicio" "contenido icono-servicio" "contenido  boton ";
+  }
+  .paginaServicios .botonCompra {
+    margin: 1px 1px;
+  }
 }
 @media (min-width: 1200px) {
   .paginaServicios .tarjeta-servicio {

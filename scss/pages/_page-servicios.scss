@@ -40,12 +40,29 @@
             margin: auto;
             text-align: center;
             padding-bottom: 15px;
+
+            color: rgb(0, 0, 0);
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 24px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: capitalize;
         }
         p{
             grid-area: contenido;
-            margin: 20px;
+            display: flex;
+            margin: 15px 17px;
             justify-content: center;
             align-items: center;
+
+            color: black;
+            font-weight: 500;
+            text-decoration: solid
+
         }
         img{
             
@@ -59,7 +76,16 @@
             display: block;
             justify-content: center;
             grid-area: boton;
-            margin: 15px 90px ;
+            margin: 10px 50px ;
+
+            &:hover {
+            border:  2px  #0f7c0eb2  outset;
+            background-color: #208f38d2;
+           
+            color: black;
+            font-weight: 500;
+            text-decoration: solid
+            }
         
         }
 
@@ -67,6 +93,7 @@
             box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
             transform: translateY(-10px);
             transition-duration: 250ms;
+        
         }
 
     }
@@ -76,6 +103,27 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    @media (min-width: 992px) {
+
+        .tarjeta-servicio {
+
+            @include tarjeta(400px,200px,black 2px solid );
+
+            width: 50;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows:    auto auto auto  ;
+        
+            grid-template-areas:    "titulo  icono-servicio"
+                                    "contenido icono-servicio"
+                                    "contenido  boton ";
+                            }
+
+            .botonCompra{
+                margin: 1px 1px ;
+    }
+}
 
     @media (min-width: 1200px) {
 
@@ -96,11 +144,7 @@
             grid-template-areas:    "titulo titulo icono-servicio"
                                     "contenido contenido icono-servicio"
                                     "contenido contenido boton ";
-        
- 
-        
-          
-
+  
                             }
     }
 }
