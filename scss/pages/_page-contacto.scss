@@ -1,5 +1,10 @@
 .paginaContacto{
 
+    main{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .contenedorForm{
 
         h2{
@@ -34,7 +39,7 @@
                 }
             }
 
-            button{
+            .boton{
                 display: block;
                 margin: 0 auto;
                 font-weight: bold;

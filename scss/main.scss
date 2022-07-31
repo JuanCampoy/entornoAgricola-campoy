@@ -15,6 +15,9 @@ $pantalla-laptop: 1200px;
 @import "header/header";
 @import "footer/footer";
 @import "misc/misc";
+
+//pages
+
 @import "pages/page-servicios.scss";
 @import "pages/page-nosotros.scss";
 @import "pages/page-contacto.scss";
