@@ -1,19 +1,14 @@
 .paginaNosotros{
 
     .tarjeta-nosotros {
-    
-        @include tarjeta(320px,230px,black 2px solid );
         
         background-color: #1bd118a2;
         background-image: linear-gradient(45deg, #1bd118b2 0%, #1f8acd9a 100%);
-    
-    
         margin: 20px 10px 0;
+        
         border: 2px black   solid;
-        height:auto;
-        width: 30%;
-     
-    
+        width: 50vh;
+
         display: grid;
         
         grid-template-columns: 1 ;
@@ -26,7 +21,7 @@
     
         h3{
             grid-area: titulo;
-            margin: auto;
+            margin: 15px auto;
     
             color: rgb(0, 0, 0);
                 font-family: Tahoma, Geneva, sans-serif;
@@ -43,23 +38,23 @@
             grid-area: contenido;
             margin: 20px;
             justify-content: center;
-            align-items: center;
+            text-align: justify;
     
-        color: black;
-        font-weight: 700;
-        text-decoration: solid
+            color: black;
+            font-weight: 600;
+            text-decoration: solid
         }
         img{
-            
             width: 100px;
             grid-area: icono;
-            display: block;
             margin: auto;
-            
         }
         button{
             grid-area: boton;
-            height: 50px;
+            margin: 0 70px;
+            align-items: center;
+            margin-bottom: 15px;
+          
            
         }
     
@@ -93,55 +88,6 @@
             text-transform: uppercase; }
     }
 
-@media (max-width: 992px) {
-
-    .tarjeta-nosotros {
-    
-        margin: 10px 10px 0;
-        border: 2px black   solid;
-        height:auto;
-        width: 47%;
-     
-    
-        display: grid;
-        
-        grid-template-columns: 1fr ;
-        grid-template-rows:    auto auto auto auto ;
-    
-        grid-template-areas:    "titulo "
-                                "icono-servicio"
-                                "contenido"
-                                "boton";
-    
-        h3{
-            grid-area: titulo;  
-            margin: auto;
-            text-align: center;
-            padding-bottom: 15px;
-           
-        }
-        p{
-            grid-area: contenido;
-            margin: 20px;
-            justify-content: center;
-            align-items: center;
-           
-        }
-        img{
-            
-            width: 100px;
-            grid-area: icono-servicio;
-            display: block;
-            margin: auto;
-            
-        }
-        button{
-            grid-area: boton;
-            height: 50px;
-        }
-    }
-
-}
 
 
 }
