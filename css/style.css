@@ -169,6 +169,21 @@ footer p {
     margin: 1px 1px;
   }
 }
+@media (min-width: 992px) {
+  .paginaServicios .tarjeta-servicio {
+    width: 400px;
+    height: 200px;
+    border: black 2px solid;
+    width: 50;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo  icono-servicio" "contenido icono-servicio" "contenido  boton ";
+  }
+  .paginaServicios .botonCompra {
+    margin: 1px 1px;
+  }
+}
 @media (min-width: 1200px) {
   .paginaServicios .tarjeta-servicio {
     width: 320px;
@@ -188,7 +203,7 @@ footer p {
 .paginaNosotros .tarjeta-nosotros {
   background-color: rgba(27, 209, 24, 0.6352941176);
   background-image: linear-gradient(45deg, rgba(27, 209, 24, 0.6980392157) 0%, rgba(31, 138, 205, 0.6039215686) 100%);
-  margin: 20px 5px 0;
+  margin: 20px 5px 20px;
   border: 2px black solid;
   width: 50vh;
   display: grid;
@@ -266,6 +281,15 @@ footer p {
   padding: 0 30px;
   text-align: center;
   text-transform: uppercase;
+}
+.paginaNosotros footer {
+  margin-top: 15px;
+}
+@media (min-width: 992px) {
+  .paginaNosotros .tarjeta-nosotros {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }
 
 .paginaContacto main {

@@ -17,10 +17,11 @@
                 }
              
                 }
+           
         
         background-color: #1bd118a2;
         background-image: linear-gradient(45deg, #1bd118b2 0%, #1f8acd9a 100%);
-        margin: 20px 5px 0;
+        margin: 20px 5px 20px;
         
         border: 2px black   solid;
         width: 50vh;
@@ -105,7 +106,20 @@
             text-transform: uppercase; }
     }
 
+    footer{
+        margin-top: 15px;
+    }
 
+    @media (min-width: 992px) {
+
+        .tarjeta-nosotros {
+            margin-left: 7px;
+            margin-right: 7px;
+
+       
+    }
+
+        
 
 }
-
+}

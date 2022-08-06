@@ -123,6 +123,25 @@
             .botonCompra{
                 margin: 1px 1px ;
     }
+} @media (min-width: 992px) {
+
+        .tarjeta-servicio {
+
+            @include tarjeta(400px,200px,black 2px solid );
+
+            width: 50;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows:    auto auto auto  ;
+        
+            grid-template-areas:    "titulo  icono-servicio"
+                                    "contenido icono-servicio"
+                                    "contenido  boton ";
+                            }
+
+            .botonCompra{
+                margin: 1px 1px ;
+    }
 }
 
     @media (min-width: 1200px) {
