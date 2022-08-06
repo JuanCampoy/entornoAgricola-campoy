@@ -169,21 +169,6 @@ footer p {
     margin: 1px 1px;
   }
 }
-@media (min-width: 992px) {
-  .paginaServicios .tarjeta-servicio {
-    width: 400px;
-    height: 200px;
-    border: black 2px solid;
-    width: 50;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "titulo  icono-servicio" "contenido icono-servicio" "contenido  boton ";
-  }
-  .paginaServicios .botonCompra {
-    margin: 1px 1px;
-  }
-}
 @media (min-width: 1200px) {
   .paginaServicios .tarjeta-servicio {
     width: 320px;
@@ -260,7 +245,7 @@ footer p {
   transform: translateY(-7px);
   transition-duration: 250ms;
 }
-.paginaNosotros .contenedorHero {
+.paginaNosotroscontenedorHero {
   background-image: url("/assets/img/page-nosotros/agro-hero.png");
   background-repeat: no-repeat;
   height: 620px;
@@ -271,7 +256,7 @@ footer p {
   align-items: center;
   justify-content: center;
 }
-.paginaNosotros .contenedorHero h2 {
+.paginaNosotroscontenedorHero h2 {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
   font-family: "Open Sans Condensed", sans-serif;
@@ -365,6 +350,52 @@ footer p {
   .paginaContacto .contenedorInfo .info {
     margin-top: 70px !important;
   }
+}
+
+.pagina-noticias .tarjeta-noticia {
+  width: 320px;
+  height: 230px;
+  border: black 1px solid;
+  width: 50vh;
+  display: flex;
+  margin-left: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% auto;
+  grid-template-areas: "titulo " "boton";
+}
+.pagina-noticias .tarjeta-noticia:first-child {
+  background-image: url(../../assets/img/page-noticias/page-noticiaPrincipal.jpg);
+}
+.pagina-noticias .tarjeta-noticia h3 {
+  grid-area: titulo;
+  margin: 15px 30px;
+}
+.pagina-noticias .tarjeta-noticia p {
+  grid-area: contenido;
+  margin: 20px;
+  justify-content: center;
+  text-align: justify;
+  color: black;
+  font-weight: 600;
+  text-decoration: solid;
+}
+.pagina-noticias .tarjeta-noticia .botonNoticia {
+  grid-area: boton;
+  justify-content: center;
+  align-items: center;
+  grid-row-end: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 300px;
+}
+.pagina-noticias .tarjeta-noticia .botonNoticia:hover {
+  background-color: rgba(32, 143, 56, 0.8235294118);
+  color: black;
+  text-decoration: solid;
 }
 
 /*# sourceMappingURL=style.css.map */
