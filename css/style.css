@@ -402,6 +402,7 @@ footer p {
 .pagina-index .tarjetaIndex:hover {
   transform: translateY(-7px);
   transition-duration: 250ms;
+  border: red;
 }
 
 /*# sourceMappingURL=style.css.map */
