@@ -25,6 +25,9 @@
 <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
+<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -37,7 +40,7 @@
     
 </head>
 
-<body>
+<body class="pagina-index">
 
 	<header class="container-fluid sticky-top mb-2 ">
 	<!-- Logo y titulo -->
@@ -86,58 +89,86 @@
 	
 	</header>
 
-	<main class="container">
+	<main class="container" >
 
-	<div class="row ">
+	<!-- Hero -->
+	<div class="p-5 text-center bg-image rounded-3" style="background-image: url('./assets/img/page-index/index-principal.jpg');height: 650px;">
+		<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+			<div class="d-flex justify-content-center align-items-center h-100">
+  				<div class="text-white">
+					<h2 class="mb-3">Entorno Agricola</h2>
+					<h3 class="mb-3">La noticia que viene desde el surco</h3>
+  				</div>
 
-		<aside class=" col-12  ">
-
-			<!-- Carrusell horizontal  -->
-			<div id="carouselExampleControls" class="carousel slide .d-lg-none .d-xl-block carousel-horzontal " data-bs-ride="carousel">
-			  <div class="carousel-inner">
-				<div class="carousel-item active">
-				  <img src="./assets/img/aside/ahome-horizontal.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-				  <img src="./assets/img/aside/banner ajonjoli.jpg" class="d-block w-100" alt="...">
-				</div>
-		
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			  </button>
+				
 			</div>
-
-
-		</aside>
-		
-		<div class=" col-md-9 col-lg-9">
-			<section >
-				<h2>Revista Mensual Edicion Mayo 2022!</h2>
-			<article >
-				
-				<a href="https://issuu.com/entornoagricolarevista/docs/entorno_agricola_web_mayo_2022" target="_blank"><img src="./assets/img/main/revista-mayo2022.png" alt="revista-menual"  class="sombra" ></a>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, enim quo ut expedita aut neque cupiditate exercitationem excepturi, culpa aspernatur consequuntur id laudantium explicabo voluptas et libero! Ullam, soluta quis!</p>
-			</article>
-			</section >
-		
-			<section>
-			<article>
-				<h2>Noticia popular de la semana</h2>
-				
-				<p>Comienzan las trillas, acompañadas de altas temperaturas y fricciones que pueden provocar un chispazo y como resultado puedan ocurrir desgracias  como la qué pasó a nuestros amigos de Eldorado, Sinaloa.
-				</p>        
-				<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FRevistaentornoagricola%2Fvideos%2F298786732451585%2F&show_text=false&width=271&t=0" width="271" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-				</iframe>
-			</article>
-			</section>
 		</div>
 	</div>
+
+	<!-- Section de iconos -->
+	<section class=" py-10" >
+		<div class="container " >
+
+			<div class="row gx-5 justify-content-center">
+				<div class="col-lg-6">
+					<div class="text-center mt-5">
+						<h3 class="mb-5">Enterate de todo lo que esta pasando desde lo local a las noticias internacionales de Agronomia, Politica , el Clima y mas!</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="row gx-5">
+				
+				<div class="col-lg-4 col-md-6 mb-5 aos-init aos-animate tarjetaIndex" data-aos="fade-up" data-aos-delay="100">
+					<a class="card text-center text-decoration-none h-100 lift " href="https://issuu.com/entornoagricolarevista/docs/entorno_agricola_web_mayo_2022" target="_blank">
+						<div class="card-body py-5">
+							<div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><img src="./assets/img/page-index/index-RevistaOnline.png" alt=""></div>
+							<h4>Revista Online</h4>
+							<p class="card-text small">Publicamos las noticias mas importantes mes con mes para que estes enterado de todo lo que sucede.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-5 aos-init aos-animate tarjetaIndex" data-aos="fade-up" data-aos-delay="150">
+					<a class="card text-center text-decoration-none h-100 lift" href="https://smn.conagua.gob.mx/es/" target="_blank">
+						<div class="card-body py-5">
+							<div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><img src="./assets/img/page-index/index-clima.png" alt=""></div>
+							<h4>Pronostico Clima</h4>
+							<p class="card-text small">Enterate de nuestro pronostico del clima y como estara el tiempo esta semana</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-5 aos-init aos-animate tarjetaIndex" data-aos="fade-up" data-aos-delay="150">
+					<a class="card text-center text-decoration-none h-100 lift" href="https://radioenvivo.com.mx/sin/los-mochis/1565-la-z.html" target="_blank">
+						<div class="card-body py-5">
+							<div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><img src="./assets/img/page-index/index-radio.png" alt=""></div>
+							<h4>Programa de radio</h4>
+							<p class="card-text small">Escucha nuestro noticiero diario!  </p>
+							<p>L-V   7:00 - 8:00    y  19:00-20:00</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-5 aos-init aos-animate tarjetaIndex" data-aos="fade-up" data-aos-delay="150">
+					<a class="card text-center text-decoration-none h-100 lift" href="./pages/error40" target="_blank">
+						<div class="card-body py-5">
+							<div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><img src="./assets/img/page-index/index-tv.png" alt=""></div>
+							<h4>Programa de TV</h4>
+							<p class="card-text small">Cambiale a tu TV  y mira nuestro programa  semanal con todo lo que paso en el campo  </p>
+							<p>Todos los viernes de 16:00 - 17:00</p>
+							
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+		
 
 	</main>
   
@@ -166,6 +197,13 @@
 	</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/scripts.js"></script>
+
+<script>
+	AOS.init();
+</script>
+
 </body>
 
 </html>
